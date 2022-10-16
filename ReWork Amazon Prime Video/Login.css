@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #060c21;
+}
+.form{
+    position: relative;
+    background: #060c21;
+    border: 1px solid #000;
+    width: 280px;
+    height: 400px;
+    padding: 10px 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+.image{
+    margin-top: 10px;
+    weight: 100px;
+    height: 50px;
+    filter: drop-shadow(5px 5px 0.9rem rgb(140,226,255));
+}
+.form::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -1px;
+    bottom: -5px;
+    left: -1px;
+    background: linear-gradient(315deg, #202d5a,
+    #46a2dc);
+    z-index: -1;
+    transform: skew(2deg, 1deg);
+    border-radius: 10px;
+}
+.form h2{
+    color: #FFF;
+    font-weight: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.form .input{
+    margin-top: 10px;
+    text-align: left;
+}
+.form .input .inputBox{
+    margin-top: 5px;
+    width: 150px;
+}
+.form .input .inputBox label{
+    display: block;
+    color: #FFF;
+    margin-bottom: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.form .input .inputBox input{
+    position: relative;
+    width: 130%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+    background: linear-gradient(315deg, #202d5a,
+    #46a2dc);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.form .input  .inputBox input[type='submit']{
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.form .input  .inputBox input[type='submit']:hover{
+    background: #46a2dc;
+}
+.form .input  .inputBox input[type='submit']:active{
+   color: rgba(255, 255, 255, 0.521); 
+   background: linear-gradient(315deg, #46a2dc,
+   #202d5a);
+}
+.forgot{
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.forgot a{
+    color: #3b7fb5;
+}
+h2{
+  margin-top: 10px;
+  font-size: 100%;
+}
